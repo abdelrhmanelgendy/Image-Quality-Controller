@@ -54,26 +54,9 @@ public class Controller {
         }
         if (file != null) {
 
-            long sizeInKB = file.getLength() / 1024;
-            if (sizeInKB <= 250) {
+          
                 outPutPath = saveBitMab(bitmapByUri, quality);
-            } else if (sizeInKB > 250 && sizeInKB <= 500) {
-                outPutPath = saveBitMab(bitmapByUri, quality);
-            } else if (sizeInKB > 500 && sizeInKB < 700) {
-                outPutPath = saveBitMab(bitmapByUri, quality);
-            } else if (sizeInKB >= 700 && sizeInKB <= 1000) {
-                outPutPath = saveBitMab(bitmapByUri, quality);
-            } else if (sizeInKB > 1000 && sizeInKB <= 3000) {
-                outPutPath = saveBitMab(bitmapByUri, quality);
-            } else if (sizeInKB > 3000 && sizeInKB <= 5000) {
-                outPutPath = saveBitMab(bitmapByUri, quality);
-            } else if (sizeInKB > 5000 && sizeInKB <= 7000) {
-                outPutPath = saveBitMab(bitmapByUri, quality);
-            } else if (sizeInKB > 7000 && sizeInKB <= 10000) {
-                outPutPath = saveBitMab(bitmapByUri, quality);
-            } else if (sizeInKB > 10000) {
-                outPutPath = saveBitMab(bitmapByUri, quality);
-            }
+          
         }
         return outPutPath;
     }
